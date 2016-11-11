@@ -2,7 +2,7 @@ import sublime
 import sublime_plugin
 import re
 
-class LogFormatDetectionCommand(sublime_plugin.TextCommand):
+class LogcatFormatDetectionCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     syntax = self.detect_view_syntax()
     if syntax:
