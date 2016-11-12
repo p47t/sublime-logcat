@@ -6,7 +6,6 @@ Display colorized log captured by `adb logcat` in Sublime Text.
 
 Choose either one of the following:
 
-- [Package Control](https://packagecontrol.io/packages/Logcat)
 - [Download](https://github.com/yinghau76/sublime-logcat/archive/master.zip) this repo, rename it to 'Logcat', and place it within your `Packages` folder. This can be found within Sublime Text at `Preferences > Browse Packages…`
 - Clone the repo into your `Packages` folder ` git clone git://github.com/yinghau76/sublime-logcat Logcat`
 
