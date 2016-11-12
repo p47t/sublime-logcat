@@ -18,9 +18,9 @@ class LogcatFormatDetectionCommand(sublime_plugin.TextCommand):
 
   def detect_line_syntax(self, line):
     if re.match(r'(?x)^(?:\s*(\d+:)\s*)?([DEFIVW])/(.*)\(\s*(\d+)\):\s+(.*)', line):
-      return 'logcat-brief.tmLanguage'
+      return 'logcat-brief'
     elif re.match(r'(?x)^(?:\s*(\d+:)\s*)?([\d-]+)\s+([\d:.]+)\s+([DEFIVW])/(.*?):\s+(.*)', line):
-      return 'logcat-cts-host.tmLanguage'
+      return 'logcat-cts-host'
     elif re.match(r'(?x)^(?:\s*(\d+:)\s*)?([\d-]+)\s+([\d:.]+)\s+(\d+)\s+(\d+)\s+([DEFIVW])\s+(.*?):\s+(.*)', line):
       return 'logcat-threadtime'
     elif re.match(r'(?x)^(?:\s*(\d+:)\s*)?([\d-]+)\s+([\d:.]+)\s+([DEFIVW])/(.*)\(\s*(\d+)\):\s+(.*)', line):
