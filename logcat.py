@@ -9,7 +9,7 @@ class LogcatFormatDetectionCommand(sublime_plugin.TextCommand):
       self.view.set_syntax_file("Packages/Logcat/%s.tmLanguage" % syntax)
 
   def detect_view_syntax(self):
-    for row in range(0, 9):
+    for row in range(0, 99):
       region = self.view.full_line(self.view.text_point(row, 0))
       line = self.view.substr(region)
       syntax = self.detect_line_syntax(line)
